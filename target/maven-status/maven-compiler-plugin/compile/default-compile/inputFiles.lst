@@ -1,9 +1,0 @@
-/Users/kinolo/Desktop/myProject/modelProxy/src/main/java/org/audit/modelproxy/config/LangChain4jConfig.java
-/Users/kinolo/Desktop/myProject/modelProxy/src/main/java/org/audit/modelproxy/service/ModelAuditService.java
-/Users/kinolo/Desktop/myProject/modelProxy/src/main/java/org/audit/modelproxy/model/AuditResponse.java
-/Users/kinolo/Desktop/myProject/modelProxy/src/main/java/org/audit/modelproxy/model/AuditRequest.java
-/Users/kinolo/Desktop/myProject/modelProxy/src/main/java/org/audit/modelproxy/service/ContentAuditAiService.java
-/Users/kinolo/Desktop/myProject/modelProxy/src/main/java/org/audit/modelproxy/controller/ModelAuditController.java
-/Users/kinolo/Desktop/myProject/modelProxy/src/main/java/org/audit/modelproxy/ModelProxyApplication.java
-/Users/kinolo/Desktop/myProject/modelProxy/src/main/java/org/audit/modelproxy/model/enums/ContentType.java
-/Users/kinolo/Desktop/myProject/modelProxy/src/main/java/org/audit/modelproxy/model/enums/AuditDecision.java

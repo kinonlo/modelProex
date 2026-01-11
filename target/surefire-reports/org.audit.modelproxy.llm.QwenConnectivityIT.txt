@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.audit.modelproxy.llm.QwenConnectivityIT
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.818 s - in org.audit.modelproxy.llm.QwenConnectivityIT
