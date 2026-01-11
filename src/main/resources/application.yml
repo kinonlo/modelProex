@@ -4,15 +4,26 @@ server:
 spring:
   application:
     name: model-proxy-service
+  config:
+    import: nacos:model-proxy-service.yaml
+  cloud:
+    nacos:
+      config:
+        server-addr: 21.6.243.67:8848
+        file-extension: yaml
+        group: DEFAULT_GROUP
+      discovery:
+        server-addr: 21.6.243.67:8848
+      enabled: true
 
 langchain4j:
   open-ai:
     chat-model:
       api-key: ${OPENAI_API_KEY:demo}
       model-name: gpt-3.5-turbo
-      temperature: 0.7
+      temperature: 0.1
   dashscope:
-    api-key: ${DASHSCOPE_API_KEY:demo}
+    api-key: ${dashscope.api-key:${DASHSCOPE_API_KEY:demo}}
     chat-model:
       model-name: deepseek-v3.2
-      temperature: 0.7
+      temperature: 0.1

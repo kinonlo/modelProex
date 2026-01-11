@@ -7,25 +7,19 @@ import dev.langchain4j.data.message.AiMessage;
 import dev.langchain4j.data.message.UserMessage;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.output.Response;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+@Slf4j
 @SpringBootTest
 public class QwenConnectivityIT {
-
-    private static final Logger log = LoggerFactory.getLogger(QwenConnectivityIT.class);
-
     @Autowired
     private ChatLanguageModel chatLanguageModel;
 
     @Test
     public void generate_shouldWork_whenDashScopeApiKeyProvided() {
-        String apiKey = System.getenv("DASHSCOPE_API_KEY");
-        assumeTrue(apiKey != null && !apiKey.isBlank(), "DASHSCOPE_API_KEY not set; skipping integration test");
-
         log.info("Starting Qwen connectivity test...");
         long startTimeMillis = System.currentTimeMillis();
         Response<AiMessage> response = chatLanguageModel.generate(

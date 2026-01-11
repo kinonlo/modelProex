@@ -30,9 +30,6 @@ public class ModelAuditControllerIT {
 
     @Test
     public void execute_shouldReturnReject_whenContentIsViolating() throws Exception {
-        String apiKey = System.getenv("DASHSCOPE_API_KEY");
-        assumeTrue(apiKey != null && !apiKey.isBlank(), "DASHSCOPE_API_KEY not set; skipping integration test");
-
         AuditRequest request = new AuditRequest();
         request.setContentId("bad-it-1");
         request.setContentType(ContentType.TEXT);
